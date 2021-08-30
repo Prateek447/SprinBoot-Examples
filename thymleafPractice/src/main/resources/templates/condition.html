@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Condition checking</title>
+</head>
+<body>
+	<h1>COnditional statements</h1>
+	<h1>User is <span th:style=" ${isActive} ? 'color:green' : 'color:red' "
+	                  th:text="${isActive} ? 'ONLINE' : 'OFFLINE' "></span></h1>
+	  
+	  
+	  <!--  If and else -->
+	  <h1 th:if="${gender}=='M'">Male</h1>
+	  <h1 th:unless="${gender}=='M'">Female</h1>    
+	  
+	  <!-- switch case -->
+	  <div th:switch="${#lists.size(myList)}">
+	    <h1 th:case="'0'">size is 0</h1>
+	    <h1 th:case="'1'">Size is 1</h1>
+	    <h1 th:case="*">size is more then 1</h1>
+	  </div>   
+	           
+</body>
+</html>

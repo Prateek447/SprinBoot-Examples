@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>About</title>
+</head>
+<body>
+
+<!-- this will put into the content of base.html -->
+<section>
+  
+  <div class="card mr-3 ml-3">
+  	<div class="card-body">
+  	
+  	  <div class="container">
+  	  
+  	 <img  style="width:200px;height:200px"  th:src="@{'/image/'+${contact.image}}" alt="image" class="mx-auto d-block  contact_profile">
+  	  
+  	    <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8" >
+         <div class="container" >
+             <h2><span  th:text="${contact.name}"></span></h2>
+              <p>Work : <b> <span th:text="${contact.work}"></span></b></p> 
+        </div>
+           <hr>
+           <ul class="container details" >
+             <li><p><span class="glyphicon glyphicon-user one" style="width:50px;"></span></p></li>
+              <li><p><span class="glyphicon glyphicon-envelope one" th:text="${contact.email}" style="width:50px;"></span></p></li>
+            </ul>
+             <hr>
+                <div class="col-sm-5 col-xs-6 tital " >Date Of Joining: 15 Jun 2016</div>
+             </div>
+  	  </div>
+  	
+  	</div>
+  </div>
+
+</section>
+	
+</body>
+</html>

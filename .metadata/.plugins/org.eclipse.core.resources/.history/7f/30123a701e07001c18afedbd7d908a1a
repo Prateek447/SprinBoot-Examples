@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>About</title>
+</head>
+<body>
+
+<!-- this will put into the content of base.html -->
+<section>
+  
+  <div class="card mr-3 ml-3">
+  	<div class="card-body">
+  	
+  	  <div class="container">
+  	  
+  	 <img  style="width:200px;height:200px"  th:src="@{'/image/'+${contact.image}}" alt="image" class="mx-auto d-block  contact_profile">
+  	  
+  	  </div>
+  	
+  	</div>
+  </div>
+
+</section>
+	
+</body>
+</html>

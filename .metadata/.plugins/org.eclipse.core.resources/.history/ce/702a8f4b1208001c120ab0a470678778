@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>Add_contact</title>
+</head>
+<body>
+
+<!-- this will put into the content of base.html -->
+<section>
+
+<div class="container">
+
+<table class="table">
+  
+  <tbody>
+ 
+    <tr>
+      <th scope="row">IDL</th>
+    <td><span th:text="${user.id}"></span></td>
+    </tr>
+   
+   <tr>
+      <th scope="row">USERNAME</th>
+      <td><span th:text="${user.name}"></span></td>
+    </tr>
+
+    <tr>
+      <th scope="row">EMAIL</th>
+    <td><span th:text="${user.email}"></span></td>
+    </tr>
+    
+     <tr>
+      <th scope="row">PHONE</th>
+    <td><span th:text="${user.phone}"></span></td>
+    </tr>
+    
+    
+  </tbody>
+</table>
+
+</div>
+
+</section>
+	
+</body>
+</html>

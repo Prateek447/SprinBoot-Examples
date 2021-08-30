@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Footer</title>
+</head>
+<body>
+	
+	<footer th:fragment="footer1(title,subtitle)">
+	
+	
+	<div class="container">
+	
+	 <h1 th:text="${title}"></h1>
+	 <h1 th:text="${subtitle}"></h1>
+	 <h1>who am i</h1>
+	 <h1>where we from</h1>
+	 <p>why we are</p>
+	</div>
+	
+	</footer>
+</body>
+</html>

@@ -1,0 +1,5 @@
+package myCodeBook.services;
+
+public class EmailServices {
+
+}
